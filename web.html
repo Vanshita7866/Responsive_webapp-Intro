@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="web-css.css" type="text/css" />
+</head>
+<style>
+    .image{
+      position :relative;
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      
+   }
+   .form{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color:rgb(116, 151, 176);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+input[type=text], select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+     width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    
+}
+</style>
+<body>
+    <div style = "position: relative">
+        <img class = "image" src = "data:image/png;base64,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"/>
+        <h3 style = "color: rgb(65, 106, 137);">Hi , I am Vanshita. I am an IT undergraduate </h3>
+    </div>
+
+    <table id="table">
+        <tr>
+          <th>Timeline</th>
+          <th>Education/Experience</th>
+        </tr>
+        <tr>
+          <td>July 2020 - Present</td>
+          <td>Bachelor of Information Technology</td>
+        </tr>
+        <tr>
+          <td>March 2021 - May 2021</td>
+          <td>Medical Receptionist</td>
+        </tr>
+      </table>
+      <footer>
+        <div class="form">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter you first name here">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Enter your last name here">
+              <label for="Contact">Contact</label>
+              <input type="text" id="Contact" name="lastname" placeholder="Enter your contact number">
+          
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value = "India">India</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="How can i help?" style="height:200px"></textarea>
+          
+              <input type="submit" style ="background-color: rgb(37, 60, 78);
+              color: white;
+              padding: 12px 20px;
+              border-radius: 4px;" value="Submit">
+            </form>
+      </footer>
+
+
+ 
+</body>
+</html>
